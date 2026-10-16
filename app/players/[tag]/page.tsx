@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { players, getPlayer, tierFor, tiers, achievementInfo } from "@/lib/data";
-import TierBadge from "@/components/TierBadge";
+import { players, getPlayer, achievementInfo } from "@/lib/data";
 
 export function generateStaticParams() { return players.map((p) => ({ tag: p.tag })); }
 export function generateMetadata({ params }: { params: { tag: string } }): Metadata {
@@ -13,10 +12,6 @@ export function generateMetadata({ params }: { params: { tag: string } }): Metad
 export default function PlayerPage({ params }: { params: { tag: string } }) {
   const p = getPlayer(params.tag);
   if (!p) notFound();
-  const tier = tierFor(p.points);
-  const idx = tiers.findIndex((t) => t.name === tier);
-  const next = tiers[idx + 1];
-  const prog = next ? Math.round(((p.points - tiers[idx].min) / (next.min - tiers[idx].min)) * 100) : 100;
   const rank = [...players].sort((a, b) => b.points - a.points).findIndex((x) => x.tag === p.tag) + 1;
   const stats = [["Points", p.points.toLocaleString()], ["Wins", p.wins], ["Elims", p.kills], ["Matches", p.matches], ["K/D", p.kd.toFixed(2)], ["Win %", `${((p.wins / p.matches) * 100).toFixed(1)}%`], ["Avg place", p.avgPlace], ["Rank", `#${rank}`]];
   return (
@@ -29,11 +24,6 @@ export default function PlayerPage({ params }: { params: { tag: string } }) {
             <h1 className="font-display text-4xl font-black">{p.tag}</h1>
             <p className="text-sm text-slate-400">{p.region}{p.team && <> · <span className="text-sky-300">{p.team}</span></>}</p>
             <p className="mt-2 text-sm text-slate-300">{p.bio}</p>
-          </div>
-          <div className="sm:text-right">
-            <TierBadge tier={tier} size="lg" />
-            <div className="mt-3 h-2 w-48 overflow-hidden rounded bg-line"><div className="h-full bg-gradient-to-r from-cyan-neon to-magenta-neon" style={{ width: `${prog}%` }} /></div>
-            <p className="mt-1 text-xs text-slate-500">{next ? `${next.min - p.points} pts to ${next.name}` : "Max tier reached"}</p>
           </div>
         </div>
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">

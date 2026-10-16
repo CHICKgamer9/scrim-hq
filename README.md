@@ -4,10 +4,10 @@ Next.js 14 (App Router) + TypeScript + Tailwind CSS. All data is fictional and l
 
 ## Features
 - Hero with **Join Discord** button and a live countdown to the next scrim (computed from the schedule)
-- Weekly schedule stored in **UTC**, displayed in the viewer's local timezone via `Intl`, with region (OCE/NA) and mode (Solos/Duos/Trios) filters
+- Weekly schedule stored in **UTC**, displayed in the viewer's local timezone via `Intl`, NA-only, with a mode (Solos/Duos/Trios) filters
 - Rules & how to join
-- Sortable leaderboard (points/wins/kills) with 8 rank tiers: Bronze → Unreal
-- Player profiles at `/players/<tag>` (stats, tier progress, achievements, recent scrims)
+- Sortable leaderboard (points/wins/kills)
+- Player profiles at `/players/<tag>` (stats, achievements, recent scrims)
 - Season playoff bracket + hall of fame
 - Clip of the week voting (client-side state, gradient placeholder thumbnails)
 - Sponsor placeholder slots
