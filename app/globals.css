@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { background: #07060d; color: #e7e5f4; }
+.grid-bg { background-image: linear-gradient(rgba(139,92,246,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,.08) 1px, transparent 1px); background-size: 40px 40px; }
+.text-gradient { background: linear-gradient(90deg,#22e5ff,#8b5cf6,#ff2bd6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.card { @apply rounded-2xl border border-line bg-panel/80 backdrop-blur; }
+.chip { @apply rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider transition; }
+.section { @apply mx-auto max-w-6xl px-4 py-16 sm:py-20; }
+.h2 { @apply font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl; }
