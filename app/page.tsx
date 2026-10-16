@@ -27,7 +27,7 @@ export default function Home() {
         <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-magenta-neon/20 blur-3xl" />
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 lg:grid-cols-[1.2fr_1fr] lg:items-center">
           <div>
-            <p className="chip inline-block border-cyan-neon/50 text-cyan-neon">Season 5 live · NA</p>
+            <p className="chip inline-block border-cyan-neon/50 text-cyan-neon">Chapter 7 Season 4 live · NA</p>
             <h1 className="mt-5 font-display text-5xl font-black uppercase leading-[.95] tracking-tight sm:text-7xl">Drop in.<br /><span className="text-gradient">Level up.</span></h1>
             <p className="mt-5 max-w-lg text-lg text-slate-300">Daily Fortnite scrims for players who want real comp practice: open lobbies, live leaderboards, seasons and bragging rights.</p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -69,7 +69,7 @@ export default function Home() {
       <Leaderboard />
 
       <section id="seasons" className="section">
-        <h2 className="h2">Season 5 <span className="text-gradient">Playoffs</span></h2>
+        <h2 className="h2">CH7S4 <span className="text-gradient">Playoffs</span></h2>
         <p className="mt-2 text-sm text-slate-400">Trios bracket · total points across 6 games per match.</p>
         <div className="mt-8 overflow-x-auto pb-2">
           <div className="grid min-w-[720px] grid-cols-3 gap-6">

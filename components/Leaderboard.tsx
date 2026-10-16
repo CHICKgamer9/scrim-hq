@@ -8,7 +8,7 @@ export default function Leaderboard() {
   const rows = [...players].sort((a, b) => b[sort] - a[sort]);
   return (
     <section id="leaderboard" className="section">
-      <h2 className="h2">Season 5 <span className="text-gradient">Leaderboard</span></h2>
+      <h2 className="h2">CH7S4 <span className="text-gradient">Leaderboard</span></h2>
       <div className="card mt-6 overflow-x-auto">
         <table className="w-full min-w-[560px] text-sm">
           <thead className="border-b border-line text-left text-xs uppercase tracking-wider text-slate-400">
