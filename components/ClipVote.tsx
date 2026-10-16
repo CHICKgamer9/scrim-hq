@@ -21,6 +21,7 @@ export default function ClipVote() {
             <div key={c.id} className={`card overflow-hidden transition ${mine === c.id ? "border-cyan-neon shadow-neon" : ""}`}>
               <div className={`relative grid aspect-video place-items-center bg-gradient-to-br ${c.g}`}>
                 <span className="grid h-12 w-12 place-items-center rounded-full bg-black/40 text-xl backdrop-blur">▶</span>
+                <span className="absolute bottom-2 left-2 rounded bg-black/60 px-1.5 text-xs font-semibold uppercase tracking-wider">Placeholder</span>
                 <span className="absolute bottom-2 right-2 rounded bg-black/60 px-1.5 text-xs">{c.len}</span>
                 {leader === c.id && <span className="absolute left-2 top-2 rounded bg-magenta-neon px-2 py-0.5 text-[10px] font-bold uppercase text-black">Leading</span>}
               </div>

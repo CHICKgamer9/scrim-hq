@@ -90,8 +90,8 @@ export const hallOfFame = [
 ];
 
 export const clips = [
-  { id: "c1", title: "1v3 box fight in storm surge", by: "VoltReaper", g: "from-cyan-500 via-blue-700 to-purple-900", len: "0:24" },
-  { id: "c2", title: "Zero-build double piece control", by: "KyroCrank", g: "from-fuchsia-500 via-purple-700 to-indigo-900", len: "0:31" },
-  { id: "c3", title: "Moving-zone sniper snipe", by: "Lumen.exe", g: "from-emerald-400 via-teal-700 to-slate-900", len: "0:18" },
-  { id: "c4", title: "Clutch end-game tarp rotate", by: "SoftAimSally", g: "from-orange-400 via-rose-600 to-purple-900", len: "0:42" },
+  { id: "c1", title: "Placeholder", by: "VoltReaper", g: "from-cyan-500 via-blue-700 to-purple-900", len: "0:24" },
+  { id: "c2", title: "Placeholder", by: "KyroCrank", g: "from-fuchsia-500 via-purple-700 to-indigo-900", len: "0:31" },
+  { id: "c3", title: "Placeholder", by: "Lumen.exe", g: "from-emerald-400 via-teal-700 to-slate-900", len: "0:18" },
+  { id: "c4", title: "Placeholder", by: "SoftAimSally", g: "from-orange-400 via-rose-600 to-purple-900", len: "0:42" },
 ];
