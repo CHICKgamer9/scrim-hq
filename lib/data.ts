@@ -67,20 +67,6 @@ export const achievementInfo: Record<string, { label: string; icon: string; desc
   ironman: { label: "Ironman", icon: "🛡️", desc: "Played every scrim for 4 weeks" },
 };
 
-export interface Match { a: string; b: string; sa: number; sb: number; }
-export const bracket: { round: string; matches: Match[] }[] = [
-  { round: "Quarterfinals", matches: [
-    { a: "Neon Syndicate", b: "Ghost Pixel", sa: 312, sb: 241 },
-    { a: "Tidebreak", b: "Lag Switch Lads", sa: 287, sb: 266 },
-    { a: "Static Wolves", b: "Bushcampers", sa: 330, sb: 198 },
-    { a: "Void Rangers", b: "Third Party Co.", sa: 254, sb: 271 },
-  ]},
-  { round: "Semifinals", matches: [
-    { a: "Neon Syndicate", b: "Tidebreak", sa: 298, sb: 276 },
-    { a: "Static Wolves", b: "Third Party Co.", sa: 315, sb: 240 },
-  ]},
-  { round: "Grand Final", matches: [{ a: "Neon Syndicate", b: "Static Wolves", sa: 0, sb: 0 }] },
-];
 
 export const hallOfFame = [
   { season: "CH7S3", champ: "Static Wolves", mvp: "zyphr", note: "Undefeated in finals week" },

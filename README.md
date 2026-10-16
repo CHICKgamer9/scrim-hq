@@ -8,7 +8,7 @@ Next.js 14 (App Router) + TypeScript + Tailwind CSS. All data is fictional and l
 - Rules & how to join
 - Sortable leaderboard (points/wins/kills)
 - Player profiles at `/players/<tag>` (stats, achievements, recent scrims)
-- Season playoff bracket + hall of fame
+- Hall of fame
 - Clip of the week voting (client-side state, gradient placeholder thumbnails)
 - Sponsor placeholder slots
 
@@ -21,7 +21,7 @@ npm run build && npm start   # production
 
 ## Customise
 - Discord invite: replace `href="#"` in `components/Nav.tsx` and `app/page.tsx`
-- Schedule, players, bracket, clips: `lib/data.ts` (`utcDay` 0=Sunday, `utcHour`/`utcMinute` in UTC)
+- Schedule, players, hall of fame, clips: `lib/data.ts` (`utcDay` 0=Sunday, `utcHour`/`utcMinute` in UTC)
 - Colours: `tailwind.config.ts`
 
 ## Push to GitHub

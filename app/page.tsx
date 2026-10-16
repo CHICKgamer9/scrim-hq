@@ -2,7 +2,7 @@ import Countdown from "@/components/Countdown";
 import Schedule from "@/components/Schedule";
 import Leaderboard from "@/components/Leaderboard";
 import ClipVote from "@/components/ClipVote";
-import { bracket, hallOfFame, players } from "@/lib/data";
+import { hallOfFame, players } from "@/lib/data";
 
 const rules = [
   "Be in the Discord and verified with your in-game name before check-in.",
@@ -69,34 +69,7 @@ export default function Home() {
       <Leaderboard />
 
       <section id="seasons" className="section">
-        <h2 className="h2">CH7S4 <span className="text-gradient">Playoffs</span></h2>
-        <p className="mt-2 text-sm text-slate-400">Trios bracket · total points across 6 games per match.</p>
-        <div className="mt-8 overflow-x-auto pb-2">
-          <div className="grid min-w-[720px] grid-cols-3 gap-6">
-            {bracket.map((r) => (
-              <div key={r.round} className="flex flex-col justify-around gap-4">
-                <p className="text-center text-xs font-semibold uppercase tracking-[.2em] text-sky-300">{r.round}</p>
-                {r.matches.map((m, i) => {
-                  const live = m.sa === 0 && m.sb === 0;
-                  return (
-                    <div key={i} className={`card overflow-hidden text-sm ${live ? "border-magenta-neon shadow-pink" : ""}`}>
-                      {[[m.a, m.sa], [m.b, m.sb]].map(([t, s], j) => {
-                        const win = !live && s === Math.max(m.sa, m.sb);
-                        return (
-                          <div key={j} className={`flex justify-between px-3 py-2 ${j === 0 ? "border-b border-line" : ""} ${win ? "bg-cyan-neon/10 font-bold text-white" : "text-slate-400"}`}>
-                            <span>{t}</span><span className="tabular-nums">{live ? "–" : s}</span>
-                          </div>
-                        );
-                      })}
-                      {live && <p className="bg-magenta-neon/15 py-1 text-center text-[10px] font-bold uppercase tracking-widest text-magenta-neon">Grand final · Sat</p>}
-                    </div>
-                  );
-                })}
-              </div>
-            ))}
-          </div>
-        </div>
-        <h3 className="mt-14 font-display text-2xl font-bold uppercase">Hall of <span className="text-gradient">Fame</span></h3>
+        <h2 className="h2">Hall of <span className="text-gradient">Fame</span></h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {hallOfFame.map((h) => (
             <div key={h.season} className="card relative overflow-hidden p-5">
