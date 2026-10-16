@@ -48,11 +48,11 @@ export default function Schedule() {
               <div className="mt-1 flex flex-wrap gap-2 text-xs">
                 <span className="rounded bg-cyan-neon/10 px-2 py-0.5 text-cyan-neon">{s.region}</span>
                 <span className="rounded bg-magenta-neon/10 px-2 py-0.5 text-magenta-neon">{s.mode}</span>
-                <span className="rounded bg-purple-neon/10 px-2 py-0.5 text-purple-300">{s.games} games</span>
+                <span className="rounded bg-purple-neon/10 px-2 py-0.5 text-sky-300">{s.games} games</span>
               </div>
             </div>
             <div className="col-span-2 flex items-center gap-2 text-xs text-slate-400 sm:col-span-1">Min tier <TierBadge tier={s.minTier} /></div>
-            <a href="#" className="col-span-2 rounded-lg border border-purple-neon px-4 py-2 text-center text-sm font-semibold text-purple-200 hover:bg-purple-neon/20 sm:col-span-1">Register</a>
+            <a href="#" className="col-span-2 rounded-lg border border-purple-neon px-4 py-2 text-center text-sm font-semibold text-sky-200 hover:bg-purple-neon/20 sm:col-span-1">Register</a>
           </div>
         ))}
       </div>

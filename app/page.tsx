@@ -75,7 +75,7 @@ export default function Home() {
           <div className="grid min-w-[720px] grid-cols-3 gap-6">
             {bracket.map((r) => (
               <div key={r.round} className="flex flex-col justify-around gap-4">
-                <p className="text-center text-xs font-semibold uppercase tracking-[.2em] text-purple-300">{r.round}</p>
+                <p className="text-center text-xs font-semibold uppercase tracking-[.2em] text-sky-300">{r.round}</p>
                 {r.matches.map((m, i) => {
                   const live = m.sa === 0 && m.sb === 0;
                   return (

@@ -7,7 +7,7 @@ import TierBadge from "@/components/TierBadge";
 export function generateStaticParams() { return players.map((p) => ({ tag: p.tag })); }
 export function generateMetadata({ params }: { params: { tag: string } }): Metadata {
   const p = getPlayer(params.tag);
-  return { title: p ? `${p.tag} · Player Profile` : "Player not found", description: p ? `${p.tag}'s Scrim HQ stats: ${p.points} pts, ${p.wins} wins, ${p.kills} elims.` : undefined };
+  return { title: p ? `${p.tag} · Player Profile` : "Player not found", description: p ? `${p.tag}'s Wave Scrims stats: ${p.points} pts, ${p.wins} wins, ${p.kills} elims.` : undefined };
 }
 
 export default function PlayerPage({ params }: { params: { tag: string } }) {
@@ -27,7 +27,7 @@ export default function PlayerPage({ params }: { params: { tag: string } }) {
           <div className="grid h-24 w-24 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-cyan-neon via-purple-neon to-magenta-neon font-display text-4xl font-black text-black">{p.tag.slice(0, 2).toUpperCase()}</div>
           <div className="flex-1">
             <h1 className="font-display text-4xl font-black">{p.tag}</h1>
-            <p className="text-sm text-slate-400">{p.region}{p.team && <> · <span className="text-purple-300">{p.team}</span></>}</p>
+            <p className="text-sm text-slate-400">{p.region}{p.team && <> · <span className="text-sky-300">{p.team}</span></>}</p>
             <p className="mt-2 text-sm text-slate-300">{p.bio}</p>
           </div>
           <div className="sm:text-right">
@@ -43,7 +43,7 @@ export default function PlayerPage({ params }: { params: { tag: string } }) {
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
           {p.achievements.map((a) => { const i = achievementInfo[a]; return (
             <div key={a} className="card flex items-center gap-3 p-4">
-              <span className="grid h-12 w-12 place-items-center rounded-full border border-purple-neon bg-purple-neon/15 text-2xl shadow-[0_0_16px_rgba(139,92,246,.4)]">{i.icon}</span>
+              <span className="grid h-12 w-12 place-items-center rounded-full border border-purple-neon bg-purple-neon/15 text-2xl shadow-[0_0_16px_rgba(14,165,233,.4)]">{i.icon}</span>
               <div><p className="font-semibold">{i.label}</p><p className="text-xs text-slate-400">{i.desc}</p></div>
             </div>); })}
         </div>

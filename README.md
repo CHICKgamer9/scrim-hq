@@ -1,4 +1,4 @@
-# Scrim HQ — Fortnite scrims community site (pitch mockup)
+# Wave Scrims — Fortnite scrims community site (pitch mockup)
 
 Next.js 14 (App Router) + TypeScript + Tailwind CSS. All data is fictional and lives in `lib/data.ts`.
 
@@ -26,7 +26,7 @@ npm run build && npm start   # production
 
 ## Push to GitHub
 ```bash
-git init && git add . && git commit -m "Scrim HQ mockup"
+git init && git add . && git commit -m "Wave Scrims mockup"
 git branch -M main
 git remote add origin https://github.com/<you>/scrim-hq.git
 git push -u origin main

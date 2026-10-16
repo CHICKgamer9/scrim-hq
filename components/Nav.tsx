@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg/80 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="font-display text-xl font-black tracking-tight"><span className="text-gradient">SCRIM</span> HQ</Link>
+        <Link href="/" className="font-display text-xl font-black tracking-tight"><span className="text-gradient">WAVE</span> SCRIMS</Link>
         <div className="hidden gap-6 text-sm text-slate-300 md:flex">
           {links.map(([l, h]) => <Link key={h} href={h} className="hover:text-cyan-neon">{l}</Link>)}
         </div>

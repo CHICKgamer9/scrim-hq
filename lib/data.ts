@@ -32,8 +32,8 @@ export const tiers: { name: Tier; min: number; color: string; glow: string }[] =
   { name: "Gold", min: 600, color: "from-yellow-300 to-amber-500", glow: "#facc15" },
   { name: "Platinum", min: 900, color: "from-teal-200 to-cyan-500", glow: "#5eead4" },
   { name: "Diamond", min: 1200, color: "from-sky-300 to-blue-600", glow: "#38bdf8" },
-  { name: "Elite", min: 1500, color: "from-violet-400 to-purple-700", glow: "#8b5cf6" },
-  { name: "Champion", min: 1800, color: "from-pink-400 to-rose-600", glow: "#ff2bd6" },
+  { name: "Elite", min: 1500, color: "from-violet-400 to-purple-700", glow: "#0ea5e9" },
+  { name: "Champion", min: 1800, color: "from-pink-400 to-rose-600", glow: "#2563eb" },
   { name: "Unreal", min: 2100, color: "from-cyan-300 via-purple-500 to-fuchsia-500", glow: "#22e5ff" },
 ];
 export function tierFor(points: number): Tier {
