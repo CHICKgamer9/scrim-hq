@@ -31,7 +31,7 @@ export default function Home() {
             <h1 className="mt-5 font-display text-5xl font-black uppercase leading-[.95] tracking-tight sm:text-7xl">Drop in.<br /><span className="text-gradient">Level up.</span></h1>
             <p className="mt-5 max-w-lg text-lg text-slate-300">Daily Fortnite scrims for players who want real comp practice: open lobbies, live leaderboards, seasons and bragging rights.</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#" className="rounded-xl bg-gradient-to-r from-cyan-neon via-purple-neon to-magenta-neon px-6 py-3 font-bold text-black shadow-neon transition hover:scale-[1.03]">Join Discord</a>
+              <a href="https://discord.gg/BkbMe3UK9f" target="_blank" rel="noopener noreferrer" className="rounded-xl bg-gradient-to-r from-cyan-neon via-purple-neon to-magenta-neon px-6 py-3 font-bold text-black shadow-neon transition hover:scale-[1.03]">Join Discord</a>
               <a href="#schedule" className="rounded-xl border border-line px-6 py-3 font-semibold hover:border-cyan-neon">View schedule</a>
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">

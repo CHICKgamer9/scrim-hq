@@ -12,7 +12,7 @@ export default function Nav() {
           {links.map(([l, h]) => <Link key={h} href={h} className="hover:text-cyan-neon">{l}</Link>)}
         </div>
         <div className="flex items-center gap-2">
-          <a href="#" className="rounded-lg bg-gradient-to-r from-cyan-neon to-purple-neon px-4 py-2 text-sm font-bold text-black shadow-neon">Join Discord</a>
+          <a href="https://discord.gg/BkbMe3UK9f" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-gradient-to-r from-cyan-neon to-purple-neon px-4 py-2 text-sm font-bold text-black shadow-neon">Join Discord</a>
           <button aria-label="Menu" onClick={() => setOpen(!open)} className="rounded-lg border border-line p-2 md:hidden">☰</button>
         </div>
       </nav>

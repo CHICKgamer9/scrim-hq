@@ -49,7 +49,7 @@ export default function Schedule() {
                 <span className="rounded bg-purple-neon/10 px-2 py-0.5 text-sky-300">{s.games} games</span>
               </div>
             </div>
-            <a href="#" className="col-span-2 rounded-lg border border-purple-neon px-4 py-2 text-center text-sm font-semibold text-sky-200 hover:bg-purple-neon/20 sm:col-span-1">Register</a>
+            <a href="https://discord.gg/BkbMe3UK9f" target="_blank" rel="noopener noreferrer" className="col-span-2 rounded-lg border border-purple-neon px-4 py-2 text-center text-sm font-semibold text-sky-200 hover:bg-purple-neon/20 sm:col-span-1">Register</a>
           </div>
         ))}
       </div>
