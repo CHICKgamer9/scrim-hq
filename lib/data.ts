@@ -83,10 +83,10 @@ export const bracket: { round: string; matches: Match[] }[] = [
 ];
 
 export const hallOfFame = [
-  { season: "CH7S4", champ: "Static Wolves", mvp: "zyphr", note: "Undefeated in finals week" },
-  { season: "CH7S3", champ: "Neon Syndicate", mvp: "VoltReaper", note: "Record 31-elim final" },
-  { season: "CH7S2", champ: "Tidebreak", mvp: "BoxedByMango", note: "Comeback from 8th" },
-  { season: "CH7S1", champ: "Ghost Pixel", mvp: "rotate_late", note: "The OG champs" },
+  { season: "CH7S3", champ: "Static Wolves", mvp: "zyphr", note: "Undefeated in finals week" },
+  { season: "CH7S2", champ: "Neon Syndicate", mvp: "VoltReaper", note: "Record 31-elim final" },
+  { season: "CH7S1", champ: "Tidebreak", mvp: "BoxedByMango", note: "Comeback from 8th" },
+  { season: "CH6S4", champ: "Ghost Pixel", mvp: "rotate_late", note: "The OG champs" },
 ];
 
 export const clips = [

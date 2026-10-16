@@ -27,7 +27,7 @@ export default function ClipVote() {
               </div>
               <div className="p-4">
                 <p className="font-semibold leading-tight">{c.title}</p>
-                <p className="text-xs text-slate-400">by {c.by}</p>
+                <p className="text-xs text-slate-400">by [player]</p>
                 <div className="mt-3 h-1.5 overflow-hidden rounded bg-line"><div className="h-full bg-gradient-to-r from-cyan-neon to-magenta-neon transition-all" style={{ width: `${pct}%` }} /></div>
                 <div className="mt-3 flex items-center justify-between">
                   <span className="text-xs tabular-nums text-slate-400">{votes[c.id]} votes · {pct}%</span>
